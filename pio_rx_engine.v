@@ -254,7 +254,7 @@ module pio_rx_engine  #(
 
 always @* begin 
     // start_loc = { {(32-ALIGNED_BIT){1'b0}}, wr_addr[ALIGNED_BIT-1:0]};
-    start_loc = {{(32-ALIGNED_BIT){1'b0}}, m_axis_cq_tdata[ALIGNED_BIT-1:2], 2'b00};
+    start_loc = {{((32-ALIGNED_BIT)){1'b0}}, m_axis_cq_tdata[ALIGNED_BIT-1:2], 2'b00};
 end
 
  // Generate a signal that indicates if we are currently receiving a packet.

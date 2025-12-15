@@ -118,3 +118,6 @@ set_property LOC GTY_QUAD_X0Y3 [get_cells [get_cells -hierarchical -filter PRIMI
 
 
 
+
+
+
